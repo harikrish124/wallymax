@@ -1,0 +1,41 @@
+name: wallymax
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_carousel_widget: ^2.2.0
+  persistent_bottom_nav_bar: ^5.0.2
+  cupertino_icons: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets\G1.png
+    - assets\G2.png
+    - assets\G3.png
+    - assets\G4.png
+    - assets\G6.png
+    - assets\G7.png
+    - assets\G8.png
+    - assets\E1.png
+    - assets\E2.png
+    - assets\E3.png
+    - assets\E4.png
+    - assets\E5.png
+    - assets\E6.png
+    - assets\c1.png
+    - assets\c2.png
+    - assets\c3.png
+    
+    
