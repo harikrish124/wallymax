@@ -17,22 +17,30 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
           children: [
             const SearchBarW(),
-            Carousel(images: images),
-            const Category(),
-            const CategoryItems(),
-            const CategoryMethods(),
-            WallList(),
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Carousel(images: images),
+                    const Category(),
+                    const CategoryItems(),
+                    const CategoryMethods(),
+                    WallList(),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
-        //bottomNavigationBar: const CustomnavBar(),
       ),
+      //bottomNavigationBar: const CustomnavBar(),
     );
   }
 

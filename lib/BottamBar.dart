@@ -16,7 +16,6 @@ class CustomnavBar extends StatelessWidget {
       screens: [
         const LikeScreen(),
         Container(),
-        const LikeScreen(),
         const SettingScreen(),
       ],
       items: [
@@ -33,17 +32,11 @@ class CustomnavBar extends StatelessWidget {
         ),
         PersistentBottomNavBarItem(
           inactiveColorPrimary: const Color.fromARGB(168, 168, 168, 100),
-          icon: const Icon(
-            Icons.heart_broken_rounded,
-          ),
-          title: "Like",
-        ),
-        PersistentBottomNavBarItem(
-          inactiveColorPrimary: const Color.fromARGB(168, 168, 168, 100),
           icon: const Icon(Icons.settings),
           title: "settings",
         ),
       ],
+      popAllScreensOnTapOfSelectedTab: false,
     );
   }
 }
