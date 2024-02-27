@@ -21,21 +21,22 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets\G1.png
-    - assets\G2.png
-    - assets\G3.png
-    - assets\G4.png
-    - assets\G6.png
-    - assets\G7.png
-    - assets\G8.png
-    - assets\E1.png
-    - assets\E2.png
-    - assets\E3.png
-    - assets\E4.png
-    - assets\E5.png
-    - assets\E6.png
-    - assets\c1.png
-    - assets\c2.png
-    - assets\c3.png
+    - assets/
+    # - assets\G1.png
+    # - assets\G2.png
+    # - assets\G3.png
+    # - assets\G4.png
+    # - assets\G6.png
+    # - assets\G7.png
+    # - assets\G8.png
+    # - assets\E1.png
+    # - assets\E2.png
+    # - assets\E3.png
+    # - assets\E4.png
+    # - assets\E5.png
+    # - assets\E6.png
+    # - assets\c1.png
+    # - assets\c2.png
+    # - assets\c3.png
     
     
