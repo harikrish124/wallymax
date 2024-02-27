@@ -5,26 +5,26 @@ class WallList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Padding(
-        padding: const EdgeInsets.only(top: 0, right: 14, left: 14),
-        child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            childAspectRatio: 0.5,
-            crossAxisCount: 3,
-            mainAxisSpacing: 8.0,
-            crossAxisSpacing: 8.0,
-          ),
-          itemCount: imagePaths.length,
-          itemBuilder: (context, index) {
-            return SizedBox(
-              child: Image.asset(
-                imagePaths[index],
-                fit: BoxFit.fill,
-              ),
-            );
-          },
+    return Padding(
+      padding: const EdgeInsets.only(top: 0, right: 14, left: 14),
+      child: GridView.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          childAspectRatio: 0.5,
+          crossAxisCount: 3,
+          mainAxisSpacing: 8.0,
+          crossAxisSpacing: 8.0,
         ),
+        itemCount: imagePaths.length,
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
+        itemBuilder: (context, index) {
+          return SizedBox(
+            child: Image.asset(
+              imagePaths[index],
+              fit: BoxFit.fill,
+            ),
+          );
+        },
       ),
     );
   }
