@@ -20,10 +20,11 @@ class CustomnavBar extends StatelessWidget {
       ],
       items: [
         PersistentBottomNavBarItem(
+          textStyle: const TextStyle(fontWeight: FontWeight.bold),
           inactiveColorPrimary: const Color.fromARGB(168, 168, 168, 100),
           activeColorPrimary: const Color.fromARGB(244, 0, 0, 0),
           icon: const Icon(Icons.home),
-          title: "Home",
+          title: "Home ",
         ),
         PersistentBottomNavBarItem(
           inactiveColorPrimary: const Color.fromARGB(168, 168, 168, 100),
