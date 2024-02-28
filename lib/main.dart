@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
 import 'package:wallymax/BottamBar.dart';
+import 'package:wallymax/Screens/splash.dart';
 import 'package:wallymax/Widgets/Category.dart';
 import 'package:wallymax/Widgets/CategoryMethods.dart';
 import 'package:wallymax/Widgets/Categoryitems.dart';
@@ -8,8 +9,7 @@ import 'package:wallymax/Widgets/SearchBar.dart';
 import 'package:wallymax/Widgets/WallLists.dart';
 
 void main() {
-  runApp(const MaterialApp(
-      debugShowCheckedModeBanner: false, home: CustomnavBar()));
+  runApp(const MaterialApp(debugShowCheckedModeBanner: false, home: Splash()));
 }
 
 class HomeScreen extends StatelessWidget {
