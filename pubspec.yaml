@@ -12,6 +12,7 @@ dependencies:
   flutter_carousel_widget: ^2.2.0
   persistent_bottom_nav_bar: ^5.0.2
   cupertino_icons: ^1.0.0
+ 
 
 dev_dependencies:
   flutter_test:
